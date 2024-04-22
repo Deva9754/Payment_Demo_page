@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Assignment</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Wix+Madefor+Text:ital,wght@0,400..800;1,400..800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="page-header">
+      <img loading="lazy" src="./assets/Logo.png" alt="Company logo" />
+    </header>
+    <div class="page">
+      <div class="page-heading">
+        <div>
+          <h1 class="madeFor">Save 10x time & effort with us</h1>
+          <p>Pay only for upload minutes. Download unlimited videos</p>
+        </div>
+        <div class="page-heading-toggle">
+          <div id="subscription_toggle" class="toggle">
+            <div
+              role="button"
+              class="toggle-button subscription_toggle_btn"
+              data-value="monthly"
+            >
+              Monthly
+            </div>
+            <div
+              role="button"
+              class="toggle-button subscription_toggle_btn"
+              data-value="yearly"
+            >
+              Yearly
+              <div class="chip" data-value="yearly">upto 51% off</div>
+            </div>
+            <div id="subscription_toggle_active" class="active"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="page-clips-info">
+        <div class="page-clips-info-text">
+          Suggesting an ideal plan for <br />
+          producing around <span><span id="total_clips">125</span>clips</span>
+          monthly
+        </div>
+        <div class="page-clips-info-range-picker">
+          <label id="min_range_value" for="vol">50</label>
+
+          <div class="input">
+            <input
+              id="input_clip_range"
+              type="range"
+              value="50"
+              min="50"
+              max="200"
+            />
+            <div id="range_tooltip" class="tooltip">50 clips</div>
+          </div>
+
+          <label id="max_range_value" for="vol">200+</label>
+        </div>
+      </div>
+      <div class="subscription-cards">
+        <div class="card">
+          <div class="card-title">
+            <div class="card-heading">
+              <div class="subscription-title">Free</div>
+              <div class="subscription-pricing">
+                <div class="subscription-pricing-details">
+                  USD 0 <span>/month</span>
+                </div>
+                <div class="subscription-pricing-plan">
+                  Billed annually at <b>22% off</b>
+                </div>
+              </div>
+            </div>
+            <button class="card-btn">Start For Free</button>
+          </div>
+          <div class="card-content">
+            <div class="divider"></div>
+            <ul class="subscription-package-list">
+              <li>
+                <img src="./assets/check.png" alt="Check icon" />
+                Everything in Free plan
+              </li>
+              <li>
+                <img src="./assets/check.png" alt="Check icon" />
+                Everything in Free plan
+              </li>
+              <li>
+                <img src="./assets/check.png" alt="Check icon" />
+                Everything in Free plan
+              </li>
+              <li>
+                <img src="./assets/check.png" alt="Check icon" />
+                Everything in Free plan
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-title">
+            <div class="card-heading">
+              <div class="subscription-title">Essential</div>
+              <div class="subscription-pricing">
+                <div class="subscription-pricing-details">
+                  USD 0 <span>/month</span>
+                </div>
+                <div class="subscription-pricing-plan">
+                  Billed annually at <b>22% off</b>
+                </div>
+              </div>
+            </div>
+            <button class="card-btn">Start For Free</button>
+          </div>
+          <div class="card-content">
+            <div class="divider"></div>
+            <ul class="subscription-package-list">
+              <li>
+                <img src="./assets/check.png" alt="Check icon" />
+                Everything in Free plan
+              </li>
+              <li>
+                <img src="./assets/check.png" alt="Check icon" />
+                Everything in Free plan
+              </li>
+              <li>
+                <img src="./assets/check.png" alt="Check icon" />
+                Everything in Free plan
+              </li>
+              <li>
+                <img src="./assets/check.png" alt="Check icon" />
+                Everything in Free plan
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="card subscription-recommended-card">
+          <div class="card-title">
+            <div class="card-heading">
+              <div class="subscription-title">
+                Growth
+                <div class="chip">Recommended</div>
+              </div>
+              <div class="subscription-pricing">
+                <div class="subscription-pricing-details">
+                  USD 0 <span>/month</span>
+                </div>
+                <div class="subscription-pricing-plan">
+                  Billed annually at <b>22% off</b>
+                </div>
+              </div>
+            </div>
+            <button class="card-btn">Start For Free</button>
+          </div>
+          <div class="card-content">
+            <div class="divider"></div>
+            <ul class="subscription-package-list">
+              <li>
+                <img src="./assets/white-check.png" alt="Check icon" />
+                Everything in Free plan
+              </li>
+              <li>
+                <img src="./assets/white-check.png" alt="Check icon" />
+                Everything in Free plan
+              </li>
+              <li>
+                <img src="./assets/white-check.png" alt="Check icon" />
+                Everything in Free plan
+              </li>
+              <li>
+                <img src="./assets/white-check.png" alt="Check icon" />
+                Everything in Free plan
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-title">
+            <div class="card-heading">
+              <div class="subscription-title">Custom</div>
+              <div class="subscription-pricing">
+                <div class="subscription-pricing-details">
+                  USD
+                  <div id="custom_pricing">0</div>
+                  <span>/month</span>
+                </div>
+                <div class="subscription-pricing-plan">
+                  Billed annually at <b>22% off</b>
+                </div>
+              </div>
+            </div>
+            <button class="card-btn">Start For Free</button>
+          </div>
+          <div class="card-content">
+            <div class="divider"></div>
+            <div class="select-component">
+              <label for="select minute">Select minutes</label>
+              <select name="select" id="select_minute">
+                <option value="1">75 Minutes</option>
+                <option value="2">15 Minutes</option>
+                <option value="3">35 Minutes</option>
+              </select>
+            </div>
+            <ul class="subscription-package-list">
+              <li>
+                <img src="./assets/check.png" alt="Check icon" />
+                Everything in Free plan
+              </li>
+              <li>
+                <img src="./assets/check.png" alt="Check icon" />
+                Everything in Free plan
+              </li>
+              <li>
+                <img src="./assets/check.png" alt="Check icon" />
+                Everything in Free plan
+              </li>
+              <li>
+                <img src="./assets/check.png" alt="Check icon" />
+                Everything in Free plan
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="plan-details">
+        <div class="accordion">
+          <div class="accordion-body">
+            <div class="accordion-button" role="button" data-open="true">
+              Core
+              <img id="up_arrow" src="./assets/up-arrow.png" alt="Arrow" />
+            </div>
+            <div class="accordion-content">
+              <table cellspacing="0">
+                <thead>
+                  <tr>
+                    <th>Minutes Per Month</th>
+                    <th>75 mins</th>
+                    <th>200 - 500 mins</th>
+                    <th>200 - 1000 mins</th>
+                    <th>400 - 1000 mins</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Render Quality</td>
+                    <td>720p</td>
+                    <td>1080p</td>
+                    <td>1080p</td>
+                    <td>4k</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <div class="accordion-body">
+            <div class="accordion-button" role="button" data-open="false">
+              Brand Kit
+              <img src="./assets/up-arrow.png" alt="Arrow" />
+            </div>
+            <div class="accordion-content">
+              <table cellspacing="0">
+                <thead>
+                  <tr>
+                    <th>Minutes Per Month</th>
+                    <th>75 mins</th>
+                    <th>200 - 500 mins</th>
+                    <th>200 - 1000 mins</th>
+                    <th>400 - 1000 mins</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Render Quality</td>
+                    <td>720p</td>
+                    <td>1080p</td>
+                    <td>1080p</td>
+                    <td>4k</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
