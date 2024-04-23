@@ -127,7 +127,7 @@ body{
 }
 input[type="range"] {
     width: 100%;
-    -webkit-appearance: none;
+   appearance:calc() ; -webkit-appearance: none;
     height: 7px;
     background: #D8D8D0;
     border-radius: 5px;
@@ -197,6 +197,7 @@ input[type="range"] {
   gap: 4px;
 }
 .subscription-pricing-details{
+    display: flex;
     font-size: 24px;
     font-weight: 600;
 }
@@ -343,10 +344,14 @@ input[type="range"] {
     transform: rotate(180deg);
 }
 .accordion-button[data-open~="true"] + .accordion-content{
-    display: block;
+    height: 100%;
 }
 .accordion-button[data-open~="false"] + .accordion-content{
-    display: none;
+    height: 0px;
+    overflow: hidden;
+}
+.accordion-content{
+    transition: height 3;
 }
 
 
@@ -370,3 +375,56 @@ input[type="range"] {
   .custom_pricing{
     display: inline;
   }
+  .td-check{
+    padding-left: 34px;
+  }
+
+
+  @media only screen and (max-width: 695px) {
+
+  
+    .subscription-cards {
+     display: flex;
+     flex-direction: column;
+     width: fit-content;
+     gap: 12px;
+     padding: 2px;
+   
+    }
+    .accordion-body{
+        display: flex;
+        flex-direction: column;
+        width: fit-content;
+        gap: 12px;
+        padding: 2px;
+    }
+    .page-header{
+        display: flex;
+    }
+    .page-heading h1{
+        padding-right: 167px;
+        font-size: 24px;
+    }
+    .page-heading p{
+        font-size: 10px;
+        padding-right: 189px;
+    }
+    .page-heading > .page-heading-toggle{
+        display: flex;
+    justify-content: space-between;
+    padding-left: 18px;
+    }
+    .page-clips-info{
+        display: flex;
+        flex-direction: column;
+        gap: 58px;
+        padding: 16px;
+    } 
+    .page-clips-info-range-picker{
+        width: 62%;
+        display: flex;
+        gap: 16px;
+        align-items: center;
+    }
+}
+  
